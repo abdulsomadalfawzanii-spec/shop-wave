@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - XM Store</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+<!-- NAV -->
+<nav class="bg-black shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <a href="index.html"><h1 class="text-white text-2xl font-bold tracking-wide">XM Store</h1></a>
+
+    <div class="hidden md:flex gap-8 text-gray-300">
+      <a href="index.html" class="hover:text-red-500">Home</a>
+      <a href="about.html" class="text-red-500">About</a>
+      <a href="#" class="hover:text-red-500">Products</a>
+      <a href="contact.html" class="hover:text-red-500">Contact</a>
+    </div>
+
+    <a href="login.html"
+      class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-full font-bold">
+      Login
+    </a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="text-center py-20 px-6">
+  <h1 class="text-5xl font-extrabold mb-6">
+    About XM Store
+  </h1>
+
+  <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+    We are a premium motorcycle store dedicated to bringing you the best bikes,
+    accessories, and riding experience in the world.
+  </p>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pb-20">
+
+  <img
+    src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc"
+    class="rounded-3xl shadow-2xl"
+  />
+
+  <div>
+    <h2 class="text-3xl font-bold mb-6">
+      Who We Are
+    </h2>
+
+    <p class="text-slate-400 leading-7 mb-6">
+      XM Store started with a simple mission — to bring high-performance motorcycles
+      closer to riders who love speed, freedom, and adventure. We carefully select
+      each bike to ensure top quality and performance.
+    </p>
+
+    <p class="text-slate-400 leading-7 mb-6">
+      From sport bikes to cruisers and adventure bikes, we provide everything you
+      need for the perfect ride experience.
+    </p>
+
+    <button class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-xl font-bold">
+      Explore Products
+    </button>
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="max-w-7xl mx-auto px-6 pb-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+  <div class="bg-slate-900 p-8 rounded-3xl hover:scale-105 transition">
+    <i class="fa-solid fa-motorcycle text-red-500 text-3xl mb-4"></i>
+    <h3 class="text-xl font-bold mb-3">Premium Bikes</h3>
+    <p class="text-slate-400">Only top-quality motorcycles from trusted brands.</p>
+  </div>
+
+  <div class="bg-slate-900 p-8 rounded-3xl hover:scale-105 transition">
+    <i class="fa-solid fa-shield-halved text-red-500 text-3xl mb-4"></i>
+    <h3 class="text-xl font-bold mb-3">Safe Riding</h3>
+    <p class="text-slate-400">We focus on safety and performance for every rider.</p>
+  </div>
+
+  <div class="bg-slate-900 p-8 rounded-3xl hover:scale-105 transition">
+    <i class="fa-solid fa-headset text-red-500 text-3xl mb-4"></i>
+    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+    <p class="text-slate-400">We are always here to help you anytime.</p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-slate-800 py-10 text-center">
+
+  <p id="footerYear" class="text-slate-500"></p>
+
+</footer>
+
+<script>
+  document.getElementById("footerYear").innerText =
+    `© ${new Date().getFullYear()} XM Store. All Rights Reserved.`;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - XM Store</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+<!-- NAV -->
+<nav class="bg-black shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <a href="product.html"><h1 class="text-white text-2xl font-bold tracking-wide">XM Store</h1></a>
+
+    <div class="hidden md:flex gap-8 text-gray-300">
+      <a href="index.html" class="hover:text-red-500">Home</a>
+      <a href="about.html" class="hover:text-red-500">About</a>
+      <a href="product.html" class="hover:text-red-500">products</a>
+      <a href="contact.html" class="text-red-500">Contact</a>
+    </div>
+
+    <a href="login.html"
+      class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-full font-bold">
+      Login
+    </a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative h-[300px] flex items-center justify-center text-center">
+  
+  <img
+    src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
+    class="absolute inset-0 w-full h-full object-cover opacity-30"
+  />
+
+  <div class="relative">
+    <h1 class="text-5xl font-extrabold">Contact Us</h1>
+    <p class="text-slate-300 mt-2">We are always here to help you</p>
+  </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12">
+
+  <!-- FORM -->
+  <div class="bg-slate-900 p-8 rounded-3xl shadow-xl">
+
+    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+
+    <form class="space-y-5">
+
+      <input type="text" placeholder="Your Name"
+        class="w-full p-3 rounded-xl bg-slate-800 outline-none focus:border-red-500 border border-slate-700">
+
+      <input type="email" placeholder="Your Email"
+        class="w-full p-3 rounded-xl bg-slate-800 outline-none focus:border-red-500 border border-slate-700">
+
+      <input type="text" placeholder="Subject"
+        class="w-full p-3 rounded-xl bg-slate-800 outline-none focus:border-red-500 border border-slate-700">
+
+      <textarea placeholder="Message"
+        class="w-full p-3 h-40 rounded-xl bg-slate-800 outline-none focus:border-red-500 border border-slate-700"></textarea>
+
+      <button class="w-full bg-red-500 hover:bg-red-600 py-3 rounded-xl font-bold">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- INFO CARDS -->
+  <div class="space-y-6">
+
+    <div class="bg-slate-900 p-6 rounded-3xl flex items-center gap-4">
+      <i class="fa-solid fa-phone text-red-500 text-2xl"></i>
+      <div>
+        <h3 class="font-bold">Phone</h3>
+        <p class="text-slate-400">+234 812 345 6789</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-3xl flex items-center gap-4">
+      <i class="fa-solid fa-envelope text-red-500 text-2xl"></i>
+      <div>
+        <h3 class="font-bold">Email</h3>
+        <p class="text-slate-400">support@xmstore.com</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-3xl flex items-center gap-4">
+      <i class="fa-solid fa-location-dot text-red-500 text-2xl"></i>
+      <div>
+        <h3 class="font-bold">Location</h3>
+        <p class="text-slate-400">Lagos, Nigeria</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MAP -->
+<section class="px-6 pb-20">
+  <div class="max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+    <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310560885!2d3.1191404803109544!3d6.548369375048858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1779724691873!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  class="w-full h-[400px]" loading="lazy">
+     
+      
+    </iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-slate-800 py-10 text-center">
+
+  <p class="text-slate-500">
+    © <span id="year"></span> XM Store. All Rights Reserved.
+  </p>
+
+</footer>
+
+<script>
+  document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
