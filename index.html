@@ -23,17 +23,17 @@
 
   <div class="max-w-7xl mx-auto px-6 py-4">
 
-    <!-- TOP NAV -->
+    
     <div class="flex items-center justify-between">
 
-      <!-- LOGO -->
+      
       <a href="#">
         <h1 class="text-white text-2xl font-bold tracking-wide">
           XM Store
         </h1>
       </a>
 
-      <!-- DESKTOP MENU -->
+      
       <div class="hidden lg:flex items-center gap-8">
 
         <a
@@ -51,7 +51,7 @@
         </a>
 
         <a
-          href="#"
+          href="product.html"
           class="text-gray-300 hover:text-red-500 transition duration-300"
         >
           Products
@@ -66,10 +66,10 @@
 
       </div>
 
-      <!-- RIGHT SIDE -->
+      
       <div class="flex items-center gap-4">
 
-        <!-- SEARCH -->
+        
         <input
           id="search"
           type="text"
@@ -77,7 +77,7 @@
           class="hidden md:block w-[180px] lg:w-[250px] px-4 py-2 rounded-full bg-slate-800 text-white border border-slate-700 outline-none focus:border-red-500 transition duration-300"
         />
 
-        <!-- LOGIN -->
+        
         <a
           href="login.html"
           class="hidden sm:block bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-full font-semibold transition duration-300"
@@ -85,7 +85,7 @@
           Login
         </a>
 
-        <!-- CART -->
+       
         <div
           class="relative cursor-pointer"
           onclick="toggleCart()"
@@ -104,7 +104,7 @@
 
         </div>
 
-        <!-- MOBILE MENU BUTTON -->
+        
         <button
           id="menuBtn"
           class="lg:hidden text-2xl text-white"
@@ -116,7 +116,7 @@
 
     </div>
 
-    <!-- MOBILE MENU -->
+    
     <div
       id="mobileMenu"
       class="hidden flex-col gap-5 mt-6 bg-slate-900 p-5 rounded-2xl lg:hidden"
@@ -150,14 +150,14 @@
         Contact
       </a>
 
-      <!-- MOBILE SEARCH -->
+      
       <input
         type="text"
         placeholder="Search..."
         class="w-full px-4 py-3 rounded-xl bg-slate-800 text-white border border-slate-700 outline-none focus:border-red-500"
       />
 
-      <!-- MOBILE LOGIN -->
+      
       <a
         href="login.html"
         class="bg-red-500 hover:bg-red-600 text-center py-3 rounded-xl font-bold"
@@ -204,6 +204,84 @@
       class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-5 pb-20"
     ></section>
 <footer class="bg-black border-t border-slate-800 mt-20">
+  <!-- PREMIUM FEATURES SECTION -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-slate-900 border border-slate-800 rounded-3xl p-8"
+  >
+    <!-- TOP BRANDS -->
+    <div
+      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+    >
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+      >
+        <i
+          class="fa-solid fa-award text-2xl text-red-500 group-hover:text-white"
+        ></i>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white">Top Brands</h3>
+        <p class="text-slate-400 text-sm">Trusted & Popular</p>
+      </div>
+    </div>
+
+    <!-- GREAT PRICES -->
+    <div
+      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+    >
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+      >
+        <i
+          class="fa-solid fa-tags text-2xl text-red-500 group-hover:text-white"
+        ></i>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white">Great Prices</h3>
+        <p class="text-slate-400 text-sm">Best Deals Everyday</p>
+      </div>
+    </div>
+
+    <!-- FAST SHIPPING -->
+    <div
+      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+    >
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+      >
+        <i
+          class="fa-solid fa-truck-fast text-2xl text-red-500 group-hover:text-white"
+        ></i>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white">Fast Shipping</h3>
+        <p class="text-slate-400 text-sm">Get It Quickly</p>
+      </div>
+    </div>
+
+    <!-- SECURE SHOPPING -->
+    <div
+      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+    >
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+      >
+        <i
+          class="fa-solid fa-shield-halved text-2xl text-red-500 group-hover:text-white"
+        ></i>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white">Secure Shopping</h3>
+        <p class="text-slate-400 text-sm">Shop With Confidence</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <div class="max-w-7xl mx-auto px-6 py-16">
 
@@ -290,7 +368,7 @@
 
       </div>
 
-      <!-- Categories -->
+     
       <div>
 
         <h2 class="text-xl font-bold mb-6">
@@ -362,10 +440,9 @@
       class="border-t border-slate-800 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4"
     >
 
-      <p
-  id="footerYear"
-  class="text-slate-500 text-center md:text-left"
-></p>
+      <div class="border-t border-slate-800 mt-8 pt-6 text-center">
+      <p id="footerYear" class="text-slate-400"></p>
+    </div>
 
       
 
