@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>XM Products</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="p.css">
+    <link rel="stylesheet" href="p.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -14,18 +14,16 @@
       referrerpolicy="no-referrer"
     />
   </head>
- <div class="overlay"></div>
- <div class="card"></div>
+  <div class="overlay"></div>
+  <div class="card"></div>
   <body class="bg-slate-950 text-white">
     <nav class="bg-black shadow-lg sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-6 py-4">
-        
         <div class="flex items-center justify-between">
-          
           <a href="about.html">
             <h1 class="text-white text-2xl font-bold tracking-wide float">
-  XM Store
-</h1>
+              XM Store
+            </h1>
           </a>
 
           <div class="hidden lg:flex items-center gap-8">
@@ -58,9 +56,7 @@
             </a>
           </div>
 
-          
           <div class="flex items-center gap-4">
-            
             <input
               id="search"
               type="text"
@@ -68,7 +64,6 @@
               class="hidden md:block w-[180px] lg:w-[250px] px-4 py-2 rounded-full bg-slate-800 text-white border border-slate-700 outline-none focus:border-red-500 transition duration-300"
             />
 
-           
             <a
               href="login.html"
               class="hidden sm:block bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-full font-semibold transition duration-300"
@@ -76,7 +71,6 @@
               Login
             </a>
 
-            
             <div class="relative cursor-pointer" onclick="toggleCart()">
               <i
                 class="fa-solid fa-cart-shopping text-2xl text-white hover:text-red-500 transition duration-300"
@@ -90,14 +84,12 @@
               </span>
             </div>
 
-            
             <button id="menuBtn" class="lg:hidden text-2xl text-white">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
 
-        
         <div
           id="mobileMenu"
           class="hidden flex-col gap-5 mt-6 bg-slate-900 p-5 rounded-2xl lg:hidden"
@@ -114,14 +106,12 @@
             Contact
           </a>
 
-         
           <input
             type="text"
             placeholder="Search..."
             class="w-full px-4 py-3 rounded-xl bg-slate-800 text-white border border-slate-700 outline-none focus:border-red-500"
           />
 
-         
           <a
             href="login.html"
             class="bg-red-500 hover:bg-red-600 text-center py-3 rounded-xl font-bold"
@@ -150,130 +140,123 @@
       </div>
     </div>
 
-    
-<div
-  id="products"
-  class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-></div>
-
-
-<footer class="bg-black text-center py-6 mt-10">
-   
-<section class="max-w-7xl mx-auto px-6 py-12">
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-slate-900 border border-slate-800 rounded-3xl p-8"
-  >
-   
     <div
-      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
-    >
-      <div
-        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
-      >
-        <i
-          class="fa-solid fa-award text-2xl text-red-500 group-hover:text-white"
-        ></i>
-      </div>
+      id="products"
+      class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    ></div>
 
-      <div>
-        <h3 class="font-bold text-white">Top Brands</h3>
-        <p class="text-slate-400 text-sm">Trusted & Popular</p>
-      </div>
-    </div>
+    <footer class="bg-black text-center py-6 mt-10">
+      <section class="max-w-7xl mx-auto px-6 py-12">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-slate-900 border border-slate-800 rounded-3xl p-8"
+        >
+          <div
+            class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+            >
+              <i
+                class="fa-solid fa-award text-2xl text-red-500 group-hover:text-white"
+              ></i>
+            </div>
 
-    
-    <div
-      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
-    >
-      <div
-        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
-      >
-        <i
-          class="fa-solid fa-tags text-2xl text-red-500 group-hover:text-white"
-        ></i>
-      </div>
+            <div>
+              <h3 class="font-bold text-white">Top Brands</h3>
+              <p class="text-slate-400 text-sm">Trusted & Popular</p>
+            </div>
+          </div>
 
-      <div>
-        <h3 class="font-bold text-white">Great Prices</h3>
-        <p class="text-slate-400 text-sm">Best Deals Everyday</p>
-      </div>
-    </div>
+          <div
+            class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+            >
+              <i
+                class="fa-solid fa-tags text-2xl text-red-500 group-hover:text-white"
+              ></i>
+            </div>
 
-   
-    <div
-      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
-    >
-      <div
-        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
-      >
-        <i
-          class="fa-solid fa-truck-fast text-2xl text-red-500 group-hover:text-white"
-        ></i>
-      </div>
+            <div>
+              <h3 class="font-bold text-white">Great Prices</h3>
+              <p class="text-slate-400 text-sm">Best Deals Everyday</p>
+            </div>
+          </div>
 
-      <div>
-        <h3 class="font-bold text-white">Fast Shipping</h3>
-        <p class="text-slate-400 text-sm">Get It Quickly</p>
-      </div>
-    </div>
+          <div
+            class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+            >
+              <i
+                class="fa-solid fa-truck-fast text-2xl text-red-500 group-hover:text-white"
+              ></i>
+            </div>
 
-   
-    <div
-      class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
-    >
-      <div
-        class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
-      >
-        <i
-          class="fa-solid fa-shield-halved text-2xl text-red-500 group-hover:text-white"
-        ></i>
-      </div>
+            <div>
+              <h3 class="font-bold text-white">Fast Shipping</h3>
+              <p class="text-slate-400 text-sm">Get It Quickly</p>
+            </div>
+          </div>
 
-      <div>
-        <h3 class="font-bold text-white">Secure Shopping</h3>
-        <p class="text-slate-400 text-sm">Shop With Confidence</p>
-      </div>
-    </div>
-  </div>
-</section>
-<footer class="bg-black border-t border-slate-800 mt-10">
-  <div class="max-w-7xl mx-auto px-6 py-10">
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-      <div>
-        <h2 class="text-2xl font-bold text-red-500">XM Store</h2>
-        <p class="text-slate-400 mt-2">
-          Premium shopping experience with quality products.
-        </p>
-      </div>
+          <div
+            class="group flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-red-500/10 group-hover:bg-red-500 transition"
+            >
+              <i
+                class="fa-solid fa-shield-halved text-2xl text-red-500 group-hover:text-white"
+              ></i>
+            </div>
 
-      <div class="flex gap-5 text-xl">
-        <a href="#" class="hover:text-red-500 transition">
-          <i class="fab fa-facebook"></i>
-        </a>
+            <div>
+              <h3 class="font-bold text-white">Secure Shopping</h3>
+              <p class="text-slate-400 text-sm">Shop With Confidence</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-black border-t border-slate-800 mt-10">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <div>
+              <h2 class="text-2xl font-bold text-red-500">XM Store</h2>
+              <p class="text-slate-400 mt-2">
+                Premium shopping experience with quality products.
+              </p>
+            </div>
 
-        <a href="#" class="hover:text-red-500 transition">
-          <i class="fab fa-instagram"></i>
-        </a>
+            <div class="flex gap-5 text-xl">
+              <a href="#" class="hover:text-red-500 transition">
+                <i class="fab fa-facebook"></i>
+              </a>
 
-        <a href="#" class="hover:text-red-500 transition">
-          <i class="fab fa-x-twitter"></i>
-        </a>
+              <a href="#" class="hover:text-red-500 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
 
-        <a href="#" class="hover:text-red-500 transition">
-          <i class="fab fa-tiktok"></i>
-        </a>
-      </div>
-    </div>
+              <a href="#" class="hover:text-red-500 transition">
+                <i class="fab fa-x-twitter"></i>
+              </a>
 
-    <div class="border-t border-slate-800 mt-8 pt-6 text-center">
-      <p id="footerYear" class="text-slate-400"></p>
-    </div>
-  </div>
-</footer>
-  <p id="footerYear"></p>
-</footer>
+              <a href="#" class="hover:text-red-500 transition">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
 
-
+          <div class="border-t border-slate-800 mt-8 pt-6 text-center">
+            <p id="footerYear" class="text-slate-400"></p>
+          </div>
+        </div>
+      </footer>
+      <p id="footerYear"></p>
+    </footer>
 
     <script src="product.js"></script>
   </body>

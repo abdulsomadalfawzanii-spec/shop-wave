@@ -67,7 +67,7 @@ function displayProducts(items) {
         </div>
 
       </div>
-    `
+    `,
     )
     .join("");
 }

@@ -1,7 +1,4 @@
-
-
-
-// login 
+// login
 function register() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -24,4 +21,3 @@ function login() {
     alert("Invalid login");
   }
 }
-

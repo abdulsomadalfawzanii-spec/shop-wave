@@ -2,32 +2,23 @@ let products = [];
 
 let cart = [];
 
-const productsContainer = document.getElementById('products');
+const productsContainer = document.getElementById("products");
 
-const searchInput = document.getElementById('search');
-
-
+const searchInput = document.getElementById("search");
 
 // FETCH PRODUCTS
-fetch('https://dummyjson.com/products/category/motorcycle')
+fetch("https://dummyjson.com/products/category/motorcycle")
+  .then((response) => response.json())
 
-.then(response => response.json())
+  .then(function (data) {
+    products = data.products;
 
-.then(function(data){
-
-  products = data.products;
-
-  displayProducts(products);
-
-});
-
-
+    displayProducts(products);
+  });
 
 // DISPLAY PRODUCTS
-function displayProducts(items){
-
-  let productsArray = items.map(function(value){
-
+function displayProducts(items) {
+  let productsArray = items.map(function (value) {
     return `
 
       <div class="card rounded-3xl p-4">
@@ -106,68 +97,48 @@ function displayProducts(items){
       </div>
 
     `;
-
   });
 
   productsContainer.innerHTML = productsArray.join("");
-
 }
 
-
-
 // ADD TO CART
-function addToCart(id){
-
-  let product = products.find(function(item){
-
+function addToCart(id) {
+  let product = products.find(function (item) {
     return item.id === id;
-
   });
 
-  let existingProduct = cart.find(function(item){
-
+  let existingProduct = cart.find(function (item) {
     return item.id === id;
-
   });
 
-  if(existingProduct){
-
+  if (existingProduct) {
     existingProduct.quantity += 1;
-
-  }else{
-
+  } else {
     cart.push({
       ...product,
-      quantity: 1
+      quantity: 1,
     });
-
   }
 
   updateCart();
-
 }
 
-
-
 // UPDATE CART
-function updateCart(){
+function updateCart() {
+  const cartContainer = document.getElementById("cartItems");
 
-  const cartContainer = document.getElementById('cartItems');
-
-  const cartCount = document.getElementById('cartCount');
+  const cartCount = document.getElementById("cartCount");
 
   let totalItems = 0;
 
-  cart.forEach(function(item){
-
+  cart.forEach(function (item) {
     totalItems += item.quantity;
-
   });
 
   cartCount.innerText = totalItems;
 
-  if(cart.length === 0){
-
+  if (cart.length === 0) {
     cartContainer.innerHTML = `
 
       <p class="text-slate-400">
@@ -177,16 +148,16 @@ function updateCart(){
     `;
 
     return;
-
   }
 
   let totalPrice = 0;
 
-  cartContainer.innerHTML = cart.map(function(item){
+  cartContainer.innerHTML =
+    cart
+      .map(function (item) {
+        totalPrice += item.price * item.quantity;
 
-    totalPrice += item.price * item.quantity;
-
-    return `
+        return `
 
       <div class="bg-slate-800 p-4 rounded-2xl mb-4">
 
@@ -247,8 +218,9 @@ function updateCart(){
       </div>
 
     `;
-
-  }).join("") + `
+      })
+      .join("") +
+    `
 
     <div class="border-t border-slate-700 pt-5 mt-5">
 
@@ -259,134 +231,84 @@ function updateCart(){
     </div>
 
   `;
-
 }
 
-
-
 // INCREASE QUANTITY
-function increaseQuantity(id){
-
-  let item = cart.find(function(product){
-
+function increaseQuantity(id) {
+  let item = cart.find(function (product) {
     return product.id === id;
-
   });
 
   item.quantity += 1;
 
   updateCart();
-
 }
-
-
 
 // DECREASE QUANTITY
-function decreaseQuantity(id){
-
-  let item = cart.find(function(product){
-
+function decreaseQuantity(id) {
+  let item = cart.find(function (product) {
     return product.id === id;
-
   });
 
-  if(item.quantity > 1){
-
+  if (item.quantity > 1) {
     item.quantity -= 1;
-
-  }else{
-
-    cart = cart.filter(function(product){
-
+  } else {
+    cart = cart.filter(function (product) {
       return product.id !== id;
-
     });
-
   }
 
   updateCart();
-
 }
-
-
 
 // REMOVE ITEM
-function removeItem(id){
-
-  cart = cart.filter(function(product){
-
+function removeItem(id) {
+  cart = cart.filter(function (product) {
     return product.id !== id;
-
   });
 
   updateCart();
-
 }
-
-
 
 // TOGGLE CART SIDEBAR
-function toggleCart(){
+function toggleCart() {
+  const sidebar = document.getElementById("cartSidebar");
 
-  const sidebar = document.getElementById('cartSidebar');
-
-  if(sidebar.style.right === '0px'){
-
-    sidebar.style.right = '-100%';
-
-  }else{
-
-    sidebar.style.right = '0px';
-
+  if (sidebar.style.right === "0px") {
+    sidebar.style.right = "-100%";
+  } else {
+    sidebar.style.right = "0px";
   }
-
 }
 
-
-
 // SEARCH PRODUCTS
-searchInput.addEventListener('input', function(e){
-
+searchInput.addEventListener("input", function (e) {
   let searchValue = e.target.value.toLowerCase();
 
-  let filteredProducts = products.filter(function(item){
-
+  let filteredProducts = products.filter(function (item) {
     return (
-
       item.title.toLowerCase().includes(searchValue) ||
-
       item.brand.toLowerCase().includes(searchValue) ||
-
       item.category.toLowerCase().includes(searchValue)
-
     );
-
   });
 
   displayProducts(filteredProducts);
-
 });
 
 // footer
 const currentYear = new Date().getFullYear();
 
-document.getElementById('footerYear').innerHTML = `
+document.getElementById("footerYear").innerHTML = `
   © ${currentYear} XM Store. All Rights Reserved.
 `;
 
-
-
 // nav
 
+const menuBtn = document.getElementById("menuBtn");
 
+const mobileMenu = document.getElementById("mobileMenu");
 
-const menuBtn = document.getElementById('menuBtn');
-
-const mobileMenu = document.getElementById('mobileMenu');
-
-menuBtn.addEventListener('click', function(){
-
-  mobileMenu.classList.toggle('hidden');
-
+menuBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("hidden");
 });
-
